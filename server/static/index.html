@@ -25,7 +25,7 @@
     <script>
         // Function to fetch data and render table
         function fetchDataAndRenderTable() {
-            fetch('/api/contacts')
+            fetch(window.location.href + 'api/contacts')
                 .then(response => response.json())
                 .then(data => {
                     console.log(data);
